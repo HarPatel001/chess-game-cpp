@@ -1,5 +1,4 @@
 #include "board.h"
-#include <iostream>
 
 Board::Board() : first_click{true} //declares click will be first click
 {
@@ -125,7 +124,6 @@ bool Board::isPathClear(int a, int b, Piece* piece, std::vector<Piece*> m_pieces
 {
     int x = piece->getx();
     int y = piece->gety();
-    std::cout << "H" << piece->getx() << a << std::endl;
 
     for(auto* mpiece : m_pieces)
     {
